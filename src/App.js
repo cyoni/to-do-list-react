@@ -1,26 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ToDoData from "./ToDoData.js"
+import ToDo from "./ToDo.js"
 
 function App() {
+
+  const tasks = ToDoData.map(item => <ToDo key={item.id} item={item}/>)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       {tasks}
     </div>
-  );
+  )
 }
 
 export default App;
