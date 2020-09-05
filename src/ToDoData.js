@@ -1,25 +1,25 @@
-const PhoneData = [
+const ToDoData = [
 
     {
       id: 1,
       task: "Go shopping",
-      isDone: false,
+      completed: false,
     },
 
     {
       id: 2,
       task: "Pay bills",
-      isDone: false
+      completed: false
     },
 
     
     {
       id: 3,
       task: "Feed the cat",
-      isDone: true,
+      completed: true,
     }
 
 ]
 
 
-export default PhoneData
+export default ToDoData
