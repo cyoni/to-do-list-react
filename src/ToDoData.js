@@ -9,7 +9,7 @@ const ToDoData = [
     {
       id: 2,
       task: "Pay bills",
-      completed: false
+      completed: true
     },
 
     
